@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="NETWORK"></string>
+	<string name="hello">Hello World, SnazzyActivity!</string>
+	<string name="app_name">TwitterSphere</string>
+	<string name="app_description">Twitter for your android</string>
+	<string name="btn_clickme_hint">Click Here to Click Here</string>
+	<color name="friendStatusBk">#FFFFFF</color>
+	<string name="friendslist">Recent Updates</string>
+	<string name="logintoprovider">Login</string>
+	<string name="twittersphere">TwitterSphere</string>
+	<string name="lblUserName">Username:</string>
+	<string name="lblPassword">Password:</string>
+	<string name="lblRememberMe">Rember Me</string>
+	<string name="mnuprefs">Preferences</string>
+</resources>

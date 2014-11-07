@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	
+		<ImageView android:id="@+id/ImgFriendAvatar"
+				   android:src="@drawable/questionmark" 
+				   android:focusable="true" android:layout_margin="1px" android:layout_width="48px" android:scaleType="fitEnd" android:layout_height="69sp"/>
+		<LinearLayout 	android:layout_height="wrap_content"
+						android:orientation="vertical" 
+						android:saveEnabled="true" android:padding="1px" android:layout_width="fill_parent">
+				
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TweetBoxLayout" android:orientation="horizontal"  android:fitsSystemWindows="true">
+					<TextView android:layout_width="fill_parent"
+							  android:layout_height="20sp" android:textColor="#ffff00"
+							android:id="@+id/TxtFriendTitleLine" android:shadowDx="3" android:shadowDy="2" android:shadowRadius="1" android:textStyle="bold" android:typeface="serif" android:capitalize="none"/>
+				<TextView android:id="@+id/TxtFriendTweetTime"
+					android:layout_width="fill_parent" android:textColor="#ffff00" android:layout_height="20sp"/>
+				</LinearLayout>
+				
+				<TextView android:layout_width="fill_parent"
+					android:textColor="#0000FF"
+					android:background="#EAEAEA" android:maxLines="4" android:minLines="4"
+					android:gravity="left" android:id="@+id/TxtFriendStatus"
+					android:padding="1px" android:bufferType="normal"
+					android:fitsSystemWindows="true" android:layout_height="48px"/>
+	 
+		</LinearLayout>
+	
+</LinearLayout>
+

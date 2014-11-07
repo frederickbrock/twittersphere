@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:saveEnabled="true"
+	android:background="#FFFFFF">
+
+	<TableRow>
+		<LinearLayout>
+			<TextView android:text="@string/lblUserName"
+				android:layout_alignParentLeft="true" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/lblUserNameView" />
+
+			<EditText android:text="" android:id="@+id/EdtUserName"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/lblUserNameView" android:minWidth="80px" />
+		</LinearLayout>
+	</TableRow>
+	<TableRow>
+		<TextView android:text="@string/lblPassword" android:id="@+id/lblPasswordView"
+			android:layout_below="@id/lblUserNameView"
+			android:layout_alignParentLeft="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<EditText android:text="password" android:id="@+id/EdtPassword"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@id/EdtUserName">
+		</EditText>
+	</TableRow>
+
+	<TableRow>
+
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:saveEnabled="true" android:layout_below="@id/EdtPassword">
+
+
+			<Button android:text="Login" android:id="@+id/BtnLogin"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+			<CheckBox android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/ChkRememberMe"
+				android:text="Remember Me"></CheckBox>
+		</LinearLayout>
+	</TableRow>
+</TableLayout>
